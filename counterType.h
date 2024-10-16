@@ -9,13 +9,35 @@ public:
     // Constructor
     counterType();
 
-    // Function prototypes
-    void initialize(); // Pre: None, Post: counter = 0
-    void setCounter(int value); // Pre: value >= 0, Post: counter = value
-    int getCounter() const; // Pre: None, Post: returns current counter
-    void increment(); // Pre: None, Post: counter++
-    void decrement(); // Pre: counter > 0, Post: counter--
-    void reset(); // Pre: None, Post: counter = 0
+    // Initialize counter to 0
+    // Pre: None
+    // Post: counter = 0
+    void initialize();
+
+    // Set counter to a specific value
+    // Pre: value >= 0
+    // Post: counter = value
+    void setCounter(int value);
+
+    // Get the current value of the counter
+    // Pre: None
+    // Post: returns current counter
+    int getCounter() const;
+
+    // Increment the counter
+    // Pre: None
+    // Post: counter++
+    void increment();
+
+    // Decrement the counter
+    // Pre: counter > 0
+    // Post: counter--
+    void decrement();
+
+    // Reset the counter to 0
+    // Pre: None
+    // Post: counter = 0
+    void reset();
 };
 
 #endif
